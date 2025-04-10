@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabil Travelogue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="hero" id="home">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="nav-tab">
+                <button class="nav-tab-button" aria-label="Toggle menu">Menu</button>
+                <nav class="nav-dropdown" id="nav-dropdown">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#places-to-visit">Places to Visit</a></li>
+                        <li><a href="#user-experiences">User Reviews</a></li>
+                        <li><a href="#contact-form">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hero-header">
+                <span>Matt Xavier Viduya</span>
+                <span>Web Development</span>
+                <span>April 10, 2025</span>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">Ireland</h1>
+                <p class="hero-subtitle">Fill your heart with Ireland</p>
+            </div>
+            <div class="theme-switch">
+                <button id="theme-toggle" class="theme-button">Dark Mode</button>
+            </div>
+        </header>
+        <main>
+            <section id="places-to-visit" class="section">
+                <h2 class="section-title">Places to Visit</h2>
+                <div class="image-gallery">
+                    <div class="gallery-item" data-tooltip="One of Ireland's most spectacular natural attractions">
+                        <span class="image-title">The Cliffs of Moher</span>
+                        <img src="Images/Cliffs_of_moher.png" alt="Towering Cliffs of Moher on Ireland's western coastline" class="gallery-image">
+                    </div>
+                    <div class="gallery-item" data-tooltip="Traditional Irish cottages are known for their colorful flower displays">
+                        <span class="image-title">Ireland House with Flowers</span>
+                        <img src="Images/Ireland_House_w_Flowers.jpg" alt="Traditional Irish cottage with colorful flower garden" class="gallery-image">
+                    </div>
+                    <div class="gallery-item" data-tooltip="Ireland is home to hundreds of historic castles dating back centuries">
+                        <span class="image-title">Historic Irish Castle</span>
+                        <img src="Images/Ireland_Concrete_Castle.jpg" alt="Ancient stone castle showcasing Ireland's medieval architecture" class="gallery-image">
+                    </div>
+                    <div class="gallery-item" data-tooltip="Kilmainham Gaol is a historic former prison in Dublin">
+                        <span class="image-title">Kilmainham Gaol Museum</span>
+                        <img src="Images/Kilmainham Gaol Museum.jpg" alt="Kilmainham Gaol Museum" class="gallery-image">
+                    </div>
+                    <div class="gallery-item" data-tooltip="Killarney National Park is a UNESCO World Heritage Site">
+                        <span class="image-title">Killarney National Park</span>
+                        <img src="Images/Killarney National Park.jpg" alt="Killarney National Park" class="gallery-image">
+                    </div>
+                    <div class="gallery-item" data-tooltip="Jameson Distillery is a famous whiskey Distillery in Ireland">
+                        <span class="image-title">Jameson Distillery</span>
+                        <img src="Images/Jameson Distillery.jpg" alt="Jameson Distillery" class="gallery-image">
+                    </div>
+                    <div class="gallery-item" data-tooltip="The Guiness Storehouse is a popular tourist attraction in Dublin"> 
+                        <span class="image-title">Guiness Storehouse</span>
+                        <img src="Images/Guiness Storehouse.jpg" alt="Guiness Storehouse" class="gallery-image">
+                    </div>
+                    <div class="gallery-item" data-tooltip="Blarney Castle is a historic castle in County Cork, Ireland"> 
+                        <span class="image-title">Blarney Castle and Gardens</span>
+                        <img src="Images/Blarney Castle and Gardens.jpg" alt="Blarney Castle and Gardens" class="gallery-image">
+                    </div>
+                </div>
+                <p class="section-content">Discover the breathtaking cliffs, lush green landscapes, and historic castles of Ireland.</p>
+            </section>
+            <section id="user-experiences" class="section">
+                <h2 class="section-title">User Reviews</h2>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-item">
+                            <p>"Ireland is breathtaking! The cliffs and landscapes are unforgettable."</p>
+                            <span>- User 1</span>
+                        </div>
+                        <div class="carousel-item">
+                            <p>"The people are so friendly, and the culture is rich and vibrant."</p>
+                            <span>- User 2</span>
+                        </div>
+                        <div class="carousel-item">
+                            <p>"Exploring Dublin's streets and the countryside was a dream come true."</p>
+                            <span>- User 3</span>
+                        </div>
+                        <div class="carousel-item">
+                            <p>"The Cliffs of Moher took my breath away! Standing at the edge watching the waves crash below is an experience I'll never forget."</p>
+                            <span>- User 4</span>
+                        </div>
+                        <div class="carousel-item">
+                            <p>"Dublin's pubs aren't just about drinking - they're cultural hubs filled with music, storytelling, and the friendliest locals you'll ever meet."</p>
+                            <span>- User 5</span>
+                        </div>
+                        <div class="carousel-item">
+                            <p>"Driving the Ring of Kerry was the highlight of our trip. The landscapes change from mountains to coastline within minutes!"</p>
+                            <span>- User 6</span>
+                        </div>
+                        <div class="carousel-item">
+                            <p>"Killarney National Park feels like stepping into a fairy tale - ancient forests, crystal lakes, and castle ruins all in one place."</p>
+                            <span>- User 7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-buttons">
+                    <button class="carousel-button prev" aria-label="Previous review">Previous</button>
+                    <button class="carousel-button next" aria-label="Next review">Next</button>
+                </div>
+            </section>
+            <section id="contact-form" class="section">
+                <h2 class="section-title">Contact Us</h2>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="location">Location:</label>
+                    <select name="location" id="location" required>
+                        <option value="" disabled selected>Select a location</option>
+                        <option value="Cliffs of Moher">Cliffs of Moher</option>
+                        <option value="Ireland House with Flowers">Ireland House with Flowers</option>
+                        <option value="Ireland Concrete Castle">Ireland Concrete Castle</option>
+                        <option value="Kilmainham Gaol Museum">Kilmainham Gaol Museum</option>
+                        <option value="Killarney National Park">Killarney National Park</option>
+                        <option value="Jameson Distillery">Jameson Distillery</option>
+                        <option value="Guiness Storehouse">Guiness Storehouse</option>
+                        <option value="Blarney Castle and Gardens">Blarney Castle and Gardens</option>
+                    </select>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows="5" cols="40" placeholder="Write your message here..." required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
